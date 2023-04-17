@@ -1,7 +1,8 @@
-__init__(self, filename)
-Constructor for the UserFiles class.
+### Init
+/t__init__(self, filename)
+/t/tConstructor for the UserFiles class.
 
-Arguments:
+/tArguments:
 
 filename (str): The name of the .userfiles file to use.
 __getitem__(self, section)
