@@ -1,18 +1,37 @@
-### Init
-/t__init__(self, filename)
-/t/tConstructor for the UserFiles class.
 
-/tArguments:
+# UserFiles
 
-filename (str): The name of the .userfiles file to use.
-__getitem__(self, section)
-Getter method for the UserFiles class. Retrieves a dictionary of key-value pairs for a given section.
+A simple module like configparser.
 
-Arguments:
 
-section (str): The section of the .userfiles file to retrieve.
-Returns:
+## Installation
 
-A dictionary of key-value pairs for the given section.
-__setitem__(self, section, values)
-Setter method for the UserFiles class.
+    pip install UserFiles
+    
+## Usage/Examples
+
+#### Simple Example:
+```python
+my_files = UserFiles('my_user_files.userfiles')
+my_files['username'] = 'johndoe'
+print(my_files['username'])  # Output: johndoe
+
+del my_files['username']
+print('username' in my_files)  # Output: False
+```
+
+## Documentation
+
+## `__init__(self, filename)`
+#### Arguments:
+    filename (str): The name of the .userfiles file to use.
+
+## `__getitem__(self, section)`
+#### Arguments:
+    section (str): The section of the .userfiles file to retrieve.
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
